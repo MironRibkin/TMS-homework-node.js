@@ -73,6 +73,8 @@ const obj = {
     three: "Z"
 }
 
+console.log(obj.one + obj.two + obj.three)
+
 const person = {
     age: 30,
     name: "Vladilen",
@@ -81,3 +83,13 @@ const person = {
     }
 }
 
+console.log(person["name"])
+person.sayHi();
+
+/// Task 3
+
+const counter = (item) => {
+    return `(${Math.floor(item / 3600)}h ${Math.floor((item % 3600)/60)}m ${Math.floor(item % 60)}s)`
+}
+
+console.log(counter(534232523525235))
