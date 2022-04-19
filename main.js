@@ -57,39 +57,3 @@ Object.keys(superTask).map(item => {
 })
 console.log(result)
 
-
-/// Task 2
-
-const str = "abcdefg";
-console.log(str[2] + str[0] + str[1] + str[1] + str[0] + str[6] + str[4]);
-
-const arr = [1, 2, 3];
-
-console.log(arr[1], arr[2])
-
-const obj = {
-    one: "X",
-    two: "Y",
-    three: "Z"
-}
-
-console.log(obj.one + obj.two + obj.three)
-
-const person = {
-    age: 30,
-    name: "Vladilen",
-    sayHi: () => {
-        console.log("Hi I'm Vladilen and I'm 30")
-    }
-}
-
-console.log(person["name"])
-person.sayHi();
-
-/// Task 3
-
-const counter = (item) => {
-    return `(${Math.floor(item / 3600)}h ${Math.floor((item % 3600)/60)}m ${Math.floor(item % 60)}s)`
-}
-
-console.log(counter(534232523525235))
